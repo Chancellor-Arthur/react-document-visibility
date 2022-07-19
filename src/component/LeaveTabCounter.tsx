@@ -5,10 +5,10 @@ const LeaveTabCounter = () => {
     const {count, visible, onVisibilityChange} = useDocumentVisibility();
 
     useEffect(() => {
-        onVisibilityChange((isVisible) => {
+        onVisibilityChange((isVisible: boolean) => {
             console.log('first handler', isVisible);
         });
-        onVisibilityChange((isVisible) => {
+        onVisibilityChange((isVisible: boolean) => {
             console.log('second handler', isVisible);
         });
     }, []);
