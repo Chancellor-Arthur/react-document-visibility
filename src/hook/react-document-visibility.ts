@@ -15,7 +15,6 @@ export const useDocumentVisibility = () => {
     let eventHandlers = useRef<Record<string, Array<Listener>>>({});
 
     const addListener = (node: Node, event: string, handler: () => void, capture = false) => {
-        debugger
         if (eventHandlers.current) {
 
             if (!(event in eventHandlers.current)) {

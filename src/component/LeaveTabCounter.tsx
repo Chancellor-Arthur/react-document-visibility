@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {useDocumentVisibility} from '../hook/useDocumentVisibility';
+import {useDocumentVisibility} from "../hook/react-document-visibility";
 
 const LeaveTabCounter = () => {
     const {count, visible, onVisibilityChange} = useDocumentVisibility();
