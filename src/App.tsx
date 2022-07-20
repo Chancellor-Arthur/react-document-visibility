@@ -1,3 +1,4 @@
+import React from "react";
 import LeaveTabCounter from "./component/LeaveTabCounter";
 
 function App() {

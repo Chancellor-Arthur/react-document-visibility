@@ -1,6 +1,6 @@
 {
   "name": "@chancellor-arthur/react-document-visibility",
-  "version": "0.3.2",
+  "version": "0.3.4",
   "source": "src/hook/react-document-visibility.ts",
   "main": "dist/react-document-visibility.js",
   "module": "dist/react-document-visibility.mjs",
