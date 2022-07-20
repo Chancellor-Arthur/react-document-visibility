@@ -1,22 +1,40 @@
 {
-  "name": "react-document-visibility",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
+  "name": "@chancellor-arthur/react-document-visibility",
+  "version": "0.3.4",
+  "source": "src/hook/react-document-visibility.ts",
+  "main": "dist/react-document-visibility.js",
+  "module": "dist/react-document-visibility.mjs",
+  "unpkg": "dist/react-document-visibility.umd.js",
+  "types": "dist/react-document-visibility.d.ts",
+  "amdName": "ReactDocumentVisibility",
+  "private": false,
+  "devDependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.45",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "microbundle": "^0.15.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "microbundle --no-compress --globals react=React --strict",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chancellor-Arthur/react-document-visibility.git"
+  },
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",
